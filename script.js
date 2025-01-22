@@ -11,10 +11,12 @@ for (let index = 0; index <= 100; index++) {
 }
 console.log(somma)
 
-// Dichiara un array con i seguenti numeri: [3, 7, 12, 15]. Usa un ciclo for per creare un nuovo array in cui ogni numero è raddoppiato, e stampa il nuovo array.
+// TODO Dichiara un array con i seguenti numeri: [3, 7, 12, 15]. Usa un ciclo for per creare un nuovo array in cui ogni numero è raddoppiato, e stampa il nuovo array.
 let number = [3, 7, 12, 15];
+let newArr =[];
+
 for (let index = 0; index < number.length; index++) {
     // console.log(number);
-    newNumber = number[index] * 2;
-    console.log(newNumber);
+    newArr.push(number[index] * 2);
 }
+console.log(newArr);
