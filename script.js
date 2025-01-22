@@ -20,3 +20,29 @@ for (let index = 0; index < number.length; index++) {
     newArr.push(number[index] * 2);
 }
 console.log(newArr);
+
+// creare una funzione che accetti due parametri e che li stampi in console
+function myFunct(c, b) {
+
+    console.log(c ,b);
+}
+myFunct(1 ,5);
+
+// scrivi una funzione chiamata gestisciComando che accetti un singolo parametro: una stringa chiamata comando la funzione deve Stampare un messagio se il comando e saluta, stampare un messagio se il comando e somma, stampare un messagio di errore se il comando non e valido 
+function gestisciComando(comando) {
+    if(comando == "saluta"){
+        console.log("buona gionata");
+        
+    }else if(comando == "somma"){
+        let sum = 15 + 18;
+        console.log(sum);
+        
+    }else{
+        console.log("comando non valido");
+        return;
+    }
+}
+
+gestisciComando("saluta");
+gestisciComando("somma");
+gestisciComando("error");
